@@ -2,3 +2,20 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
+
+:root {
+	--color-black: #000000;
+	--color-blush: #ffbbec;
+	--color-dandelion: #ffaf01;
+	--color-darkblue: #1e2745;
+	--color-darkteal: #005e7a;
+	--color-magenta: #a50779;
+	--color-sky: #8ed8f1;
+
+    @property --counter-color {
+        /* syntax: 'black | blush | dandelion | darkblue | darkteal | magenta | sky'; */
+        syntax: '<color>';
+        inherits: true;
+        initial-value: var(--color-magenta, #a50779);
+    }
+}

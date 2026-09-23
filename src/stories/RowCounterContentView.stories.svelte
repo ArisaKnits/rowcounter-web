@@ -21,9 +21,9 @@
 	});
 </script>
 
-<Story name="Logged In" args={{ rowCount: 5, repeatCount: 1 }} />
+<Story name="Default" args={{ currentRow: 5, repeatCount: 1, icon: 'hankncrochet', bgColor: 'magenta' }} />
 
-<Story name="Logged Out" args={{ rowCount: 37, repeatCount: 0 }} />
+<Story name="Example 1" args={{ currentRow: 37, repeatCount: 0, icon: 'mittens', bgColor: 'darkblue'	 }} />
 
-<Story name="Initial State" args={{ rowCount: 0, repeatCount: 0 }} />
+<Story name="Initial State" args={{ currentRow: 0, repeatCount: 0, icon: 'cake', bgColor: 'darkteal' }} />
 
