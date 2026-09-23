@@ -5,22 +5,23 @@
 	import Button from './Button.svelte';
 
 	interface Props {
-		user?: { name: string };
+		rowCount: number;
+		repeatCount: number;
 		onLogin?: () => void;
 		onLogout?: () => void;
 		onCreateAccount?: () => void;
 	}
 
-	const { user, onLogin, onLogout, onCreateAccount }: Props = $props();
+	const { rowCount, repeatCount, onLogin, onLogout, onCreateAccount }: Props = $props();
 </script>
 
 <section class="flex flex-col items-center gap-4">
 	<Yarn size="48" />
 	<button class="btn rounded-full flex items-center justify-center aspect-square h-auto">
 		<span class="countdown font-mono text-6xl font-extralight">
-			<span style="--value:59; --digits: 1;" aria-live="polite" aria-label="59">59</span>
+			<span class="font-extralight" style="--value:{rowCount}; --digits: 1;" aria-live="polite" aria-label={rowCount.toString()}>{rowCount}</span>
 		</span>
 	</button>
 	<button class="btn btn-circle btn-xs"><MinusIcon /></button>
-	<p>Repeats: 1</p>
+	<p>Repeats: {repeatCount}</p>
 </section>

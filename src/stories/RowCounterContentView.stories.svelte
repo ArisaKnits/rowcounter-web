@@ -21,6 +21,9 @@
 	});
 </script>
 
-<Story name="Logged In" args={{ user: { name: 'Jane Doe' } }} />
+<Story name="Logged In" args={{ rowCount: 5, repeatCount: 1 }} />
 
-<Story name="Logged Out" />
+<Story name="Logged Out" args={{ rowCount: 37, repeatCount: 0 }} />
+
+<Story name="Initial State" args={{ rowCount: 0, repeatCount: 0 }} />
+
