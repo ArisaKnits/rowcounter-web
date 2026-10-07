@@ -4,6 +4,8 @@
 	import CounterIcon from './CounterIcon.svelte';
 
 	interface Props {
+		/** The unique identifier for the row counter */
+		id: number;
 		/** The number of the current row the user is on (1-based index) */
 		currentRow: number;
 		/** The row after which the pattern repeats */
@@ -21,6 +23,7 @@
 	}
 
 	const {
+		id,
 		currentRow,
 		repeatAfterRow = 0,
 		repeatCount = 0,
@@ -34,7 +37,7 @@
 
 <section
 	class="flex flex-col items-center gap-4 text-white"
-	style="--counter-color: var(--color-{bgColor}); background-color: var(--counter-color);"
+	style="--counter-color: var(--color-{bgColor}); background-color: var(--counter-color); view-transition-name: rc-{id};"
 >
 	<CounterIcon {icon} class="h-10" />
 	<button class="btn flex aspect-square h-auto items-center justify-center rounded-full">

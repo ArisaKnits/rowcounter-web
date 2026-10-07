@@ -21,9 +21,9 @@
 	});
 </script>
 
-<Story name="Default" args={{ currentRow: 5, repeatCount: 1, icon: 'hankncrochet', bgColor: 'magenta' }} />
+<Story name="Default" args={{ id: 1, currentRow: 5, repeatCount: 1, icon: 'hankncrochet', bgColor: 'magenta' }} />
 
-<Story name="Example 1" args={{ currentRow: 37, repeatCount: 0, icon: 'mittens', bgColor: 'darkblue'	 }} />
+<Story name="Example 1" args={{ id: 2, currentRow: 37, repeatCount: 0, icon: 'mittens', bgColor: 'darkblue'	 }} />
 
-<Story name="Initial State" args={{ currentRow: 0, repeatCount: 0, icon: 'cake', bgColor: 'darkteal' }} />
+<Story name="Initial State" args={{ id: 3, currentRow: 0, repeatCount: 0, icon: 'cake', bgColor: 'darkteal' }} />
 
